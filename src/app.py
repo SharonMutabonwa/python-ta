@@ -3,7 +3,15 @@ import os
 
 
 def prime(s):
-    # your code goes here
+  num = int(s)
+  if num == 2:
+    return True
+  for i in range(2, num):
+    if num % i == 0:
+      return False
+  else:
+    return True
+    
 
 def solution(s):
     return prime(s)
